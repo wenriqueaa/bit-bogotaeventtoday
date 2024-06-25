@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlaces css -->
+    <link rel="stylesheet" href="./pages-css/events.css">
+    <!-- fonts Averia Sans Libre -->
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Libreria Leaflet.js   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <title>BIT - Bogota Event Today</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Suponiendo que el JSON se obtiene de una URL
+            const url = './pages-js/events.json';
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Obtener la lista de tipos de eventos
+                    const Event_type = data.map(event => event.Event_type);
+                    
+                    // Eliminar duplicados
+                    const uniqueEvent_type = [...new Set(Event_type)];
+
+                    // Mostrar los tipos de eventos en la consola
+                    console.log(uniqueEvent_type);
+
+                    // Opcional: Mostrar en el HTML
+                    const listContainer = document.getElementById('event-types');
+                    uniqueEvent_type.forEach(type => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = type;
+                        listContainer.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Error al obtener los eventos:', error));
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Tipos de Eventos</h1>
+    <ul id="event-types"></ul>
+    <!-- <div id="header-placeholder"></div> -->
+        <main>
+        <!-- <div class="pagesTitle">
+            <h2>Events</h2>
+        </div> -->
+        <section>
+            <div class="map_container">
+                <div id="map">
+                    <!-- aca se carga el mapa -->
+                </div>
+                <div id="map_controls">
+                    <label for="Event-type">Select Event Type</label>
+                    <select id="Event-type">
+                        <option value="all">All Events</option>
+                        <option value="general">General Medicine</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="dentistry">Dentistry</option>
+                        <option value="cardiology">Cardiology</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <!-- Libreria Leaflet.js   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="./pages-js/viewmap.js"></script>
+
+</body>
+
+</html>

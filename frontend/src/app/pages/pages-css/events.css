@@ -1,0 +1,53 @@
+.pagesTitle h2 {
+    padding: 20px 0px 20px 40px;
+    font-size: 48px;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.map_container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    background-color: #1E3A8A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+}
+
+
+#map {
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* para los filtros del mapa */
+#map_controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: #A7F3D0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+#map_controls label {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#map_controls select {
+    padding: 5px;
+    font-size: 20px;
+}

@@ -1,9 +1,62 @@
-<agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker 
-      *ngFor="let event of events"
-      [latitude]="event.location.lat" 
-      [longitude]="event.location.lng" 
-      [label]="event.name">
-    </agm-marker>
-  </agm-map>
-  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT - Bogota Event Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="./styles/styles-figma.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="clipPathGroup">
+        <header id="header2">
+            <div class="background">
+                <img id="Ellipse29" src="./assets/city_image_002.png" alt="city_image_002">
+            </div>
+            <img id="mapaEventos" src="./assets/MapaEventos.png" alt="Mapa Eventos">
+            <div class="siteLogo3">
+                <div class="group7">
+                    <div class="B">B</div>
+                    <div class="bitBogotaEventToday">BIT Bogotá Event Today</div>
+                </div>
+            </div>
+            <div id="Search">
+                <div id="Where">
+                    <!-- <input type="text" title="Actividad"> -->
+                    <form id="viewEvents">
+                        <label id="actividad">
+                            Actividad:
+                            <input type="text" name="event" value="teatro" />
+                        </label>
+                        <input id="Group18" type="submit" />
+                    </form>
+                </div>
+                <div id="Group18">
+                    <!-- /* Rectangle 3 */
+                    /* lbl_search */
+                    /* icon-park:search */
+                    /* Group */
+                    /* Vector1*/
+                    /* Vector2*/
+                    /* Vector 3*/ -->
+                </div>
+            </div>
+        </header>
+    </div>
+    <script>
+        document.getElementById("viewEvents").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+            // Redirigir a la URL especificada
+            window.location.href = "http://127.0.0.1:5500/frontend/src/app/pages/events.html";
+        });
+    </script>
+</body>
+
+</html>

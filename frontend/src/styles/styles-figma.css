@@ -1,0 +1,288 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    position: relative;
+
+    flex-direction: column;
+    padding: 0px;
+    gap: 10px;
+    background: #FFFFFF;
+}
+
+.content {
+    text-align: center;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    /* Ajusta la distancia desde el fondo */
+    right: 20px;
+    /* Ajusta la distancia desde la derecha */
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Clip path group */
+.clipPathGroup {
+    width: 100%;
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Header 2 */
+#header2 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+/* Background */
+.background {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #F5F5F5;
+}
+
+.siteLogo3 {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    /* left: 3.07%; */
+    /* right: 82.13%; */
+    /* top: 3.46%; */
+    /* bottom: 86.61%; */
+}
+
+.group7 {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    /* left: 3.07%;
+right: 82.13%;
+top: 3.46%;
+bottom: 86.61%; */
+}
+
+.B {
+    position: absolute;
+    /* width: 54px;
+    height: 86px; */
+    top: 0;
+    right: 0%;
+    bottom: 0;
+    left: 0;
+
+
+    font-family: 'Sansita Swashed';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 36px;
+    /* line-height: 86px; */
+
+    color: #003366;
+
+    text-shadow: 2px 4px 2px #F24E1E;
+}
+
+.bitBogotaEventToday {
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    /* left: calc(50% - 133px/2 - 485.5px);  */
+    left: calc(50% + 35px);
+    /* top: calc(50% - 56px/2 - 345px); */
+    top: calc(50%);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 56px;
+
+    color: #003366;
+    text-shadow: 1px 1px 1px #F24E1E;
+}
+
+#Search {
+
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    /* left: 260px; top: 30px; */
+    /* Rectangle 4 */
+
+    /* position: absolute; */
+    left: 19%;
+    /* right: 18.71%; */
+    top: 10px;
+    /* bottom: 84.99%; */
+
+    border: 2px solid #87CEEB;
+    border-radius: 25px;
+
+}
+
+#Group18 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 70%;
+    top: 5px;
+}
+
+#Rectangle3 {
+    position: absolute;
+    left: 65.18%;
+    right: 19.48%;
+    top: 4.62%;
+    bottom: 86.14%;
+
+    background: #F24E1E;
+    border-radius: 25px;
+}
+
+#lbl_search {
+    position: absolute;
+    width: 150px;
+    height: 58px;
+    left: calc(50% - 150px/2 + 333px);
+    top: calc(50% - 58px/2 - 344px);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#icon-park-search {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 870px;
+    top: 56px;
+}
+
+#Group-icon-park-search {
+
+    position: absolute;
+    left: 8.33%;
+    right: 13.11%;
+    top: 8.33%;
+    bottom: 13.11%;
+
+}
+
+#Vector1 {
+    position: absolute;
+    left: 8.33%;
+    right: 20.83%;
+    top: 8.33%;
+    bottom: 20.83%;
+
+    background: #2F88FF;
+    border: 4px solid #000000;
+}
+
+#Vector2 {
+
+    position: absolute;
+    left: 31.97%;
+    right: 44.46%;
+    top: 25%;
+    bottom: 70.12%;
+
+    border: 4px solid #FFFFFF;
+}
+
+#Vector3 {
+    position: absolute;
+    left: 69.21%;
+    right: 13.11%;
+    top: 69.21%;
+    bottom: 13.11%;
+
+    border: 4px solid #000000;
+}
+
+#Where {
+    padding: 5px 0 0 15px;
+    /* position: absolute;
+    width: 350px;
+    height: 60px;
+    left: 478px;
+    top: 60px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #87CEEB;
+
+}
+
+#actividad {
+
+    /* position: absolute;
+    width: 133px;
+    height: 38px;
+    left: 315px;
+    top: 60px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px; */
+    /* identical to box height */
+
+    color: #000000;
+
+}
+
+#Ellipse29 {
+    position: absolute;
+    bottom: 20px;
+    /* Ajusta la distancia desde el fondo */
+    right: 20px;
+    /* Ajusta la distancia desde la derecha */
+    padding: 10px;
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+}
+
+#mapaEventos {
+    position: absolute;
+    bottom: 0;
+    /* Ajusta la distancia desde el fondo */
+    left: 30px;
+    /* Ajusta la distancia desde la derecha */
+    /* padding: 10px; */
+    width: 90%;
+    height: 90%;
+    /* border-radius: 25%; */
+
+}
